@@ -14,9 +14,6 @@ export default defineNuxtConfig({
     head: {
       link: [{
         rel: 'stylesheet',
-        href: 'assets/css/input.css'
-      }, {
-        rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css'
       }],
       script: ['https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js'],
