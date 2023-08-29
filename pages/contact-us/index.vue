@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <NuxtLayout> <BlogList /> </NuxtLayout>
+  <NuxtLayout> Page: foo </NuxtLayout>
 </template>
 
 <style scoped></style>

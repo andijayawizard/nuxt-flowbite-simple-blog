@@ -7,7 +7,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiKeyAfl: process.env.apiKeyAfl,
-      apiUrlAfl: process.env.apiUrlAfl
+      apiUrlAfl: process.env.apiUrlAfl,
+      apiKeyFilament: process.env.apiKeyFilament,
+      apiUrlFilament: process.env.apiUrlFilament,
     }
   },
   app: {

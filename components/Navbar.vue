@@ -65,7 +65,7 @@ const { data: list } = await useFetch(
           </li> -->
           <li v-for="(item, index) in list.records" :key="index">
             <NuxtLink
-              :to="`${item.seo}`"
+              :to="`/${item.seo}`"
               class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >{{ item.caption == "/" ? "home" : item.caption }}</NuxtLink
             >
@@ -133,14 +133,14 @@ const { data: list } = await useFetch(
               </div>
             </div>
           </li>
-          <!-- <li>
-            <a
-              href="#"
+          <li>
+            <NuxtLink
+              to="/articles"
               class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >Pricing</a
+              >Articles</NuxtLink
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#"
               class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
